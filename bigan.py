@@ -224,7 +224,7 @@ class GAN(object):
         l = LeakyReLU(0.2)(l)
 
         x = d_block(inp, 1 * cha)   #64
-        x = d_block(inp, 2 * cha)   #32
+        x = d_block(x, 2 * cha)   #32
         x = d_block(x, 3 * cha)   #16
         x = d_block(x, 4 * cha)  #8
         x = d_block(x, 8 * cha)  #4
@@ -278,7 +278,7 @@ class GAN(object):
         inp = Input(shape = [im_size, im_size, 3])
 
         x = d_block(inp, 1 * cha)   #64
-        x = d_block(inp, 2 * cha)   #32
+        x = d_block(x, 2 * cha)   #32
         x = d_block(x, 3 * cha)   #16
         x = d_block(x, 4 * cha)  #8
         x = d_block(x, 8 * cha)  #4
