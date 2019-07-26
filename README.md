@@ -17,6 +17,9 @@ Top are generated from nothing. Bottom shows real images (1st and 3rd row) and t
 
 
 To use:
+- Create 3 directories: "data", "Results", "Models"
+- In data, create a folder with the images.
+- Specify training details in bigan.py
 - Train BiGAN using bigan.py
 - Make predictions using the functions in guess.py
 
